@@ -11,37 +11,37 @@ public class Main {
         zodiac = dogumYili % 12;
         switch (zodiac) {
             case 0:
-                System.out.println("Çin zodyağınız : " +"Maymun");
+                System.out.println("Çin zodyağı burcunuz : " +"Maymun");
                 break;
             case 1:
-                System.out.println("Çin zodyağınız : " +"Horoz");
+                System.out.println("Çin zodyağı burcunuz : " +"Horoz");
                 break;
             case 2:
-                System.out.println("Çin zodyağınız : " +"Köpek");
+                System.out.println("Çin zodyağı burcunuz : " +"Köpek");
                 break;
             case 3:
-                System.out.println("Çin zodyağınız : " +"Domuz");
+                System.out.println("Çin zodyağı burcunuz : " +"Domuz");
                 break;
             case 4:
-                System.out.println("Çin zodyağınız : " +"Fare");
+                System.out.println("Çin zodyağı burcunuz : " +"Fare");
                 break;
             case 5:
-                System.out.println("Çin zodyağınız : " +"Öküz");
+                System.out.println("Çin zodyağı burcunuz : " +"Öküz");
                 break;
             case 6:
-                System.out.println("Çin zodyağınız : " +"Kaplan");
+                System.out.println("Çin zodyağı burcunuz : " +"Kaplan");
                 break;
             case 7:
-                System.out.println("Çin zodyağınız : " +"Tavşan");
+                System.out.println("Çin zodyağı burcunuz : " +"Tavşan");
                 break;
             case 8:
-                System.out.println("Çin zodyağınız : " +"Ejderha");
+                System.out.println("Çin zodyağı burcunuz : " +"Ejderha");
                 break;
             case 9:
-                System.out.println("Çin zodyağınız : " +"Yılan");
+                System.out.println("Çin zodyağı burcunuz : " +"Yılan");
                 break;
             case 10:
-                System.out.println("Çin zodyağınız : " +"At");
+                System.out.println("Çin zodyağı burcunuz : " +"At");
                 break;
             case 11:
                 System.out.println("Çin zodyağınız : " +"Koyun");
