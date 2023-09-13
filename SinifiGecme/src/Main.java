@@ -1,17 +1,42 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner input = new Scanner(System.in);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        int toplamNot = 0;
+        int gecerliDersSayisi = 0;
+        int sinifGecmeNotu = 55;
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        String[] dersler = {"Türkçe", "Matematik", "Fizik", "Kimya", "Müzik"};
+
+        int i;
+        for (i = 0; i < dersler.length; i++) {
+            String ders = dersler[i];
+            System.out.print(ders + " notunu giriniz (0-100 arası): ");
+            int not = input.nextInt();
+
+            if (not >= 0 && not <= 100) {
+                toplamNot += not;
+                gecerliDersSayisi++;
+            } else {
+                System.out.println("Geçersiz not girişi! Not 0 ile 100 arasında olmalı.");
+            }
+        }
+
+        if (gecerliDersSayisi > 0) {
+            double ortalama = (double) toplamNot / gecerliDersSayisi;
+            System.out.println("Derslerin Ortalaması: " + ortalama);
+            if (ortalama >= sinifGecmeNotu) {
+                System.out.println("Sınıfı geçtiniz!");
+            } else {
+                System.out.println("Sınıfı geçemediniz!");
+            }
+
+        } else {
+            System.out.println("Geçerli not girilmedi, ortalama hesaplanamıyor.");
+
+
         }
     }
 }
