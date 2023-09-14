@@ -20,9 +20,10 @@ public class Main {
         }
 
         // tablo halinde yazdırmak için yaptığım işlemler
+        //stringlerim biraz garip duruyor şu an ama daha güzel görünüm için bir şey denedim. ileride boşlukları daha güzel bi şekilde değiştireceğim
         System.out.println("Kuvvetler\t4\t        5"); // tabloda eşit bi şekilde oturması için kuvvetler charı kadar boşluk bıraktım
-        int maxIndex = Math.max(kuvvet4.size(), kuvvet5.size());
-        for (int i = 0 ; i <= maxIndex ; i++){
+        int maxSize = Math.max(kuvvet4.size(), kuvvet5.size());
+        for (int i = 0 ; i <= maxSize-1 ; i++){
             String veri4 = (i < kuvvet4.size()) ? String.valueOf(kuvvet4.get(i)) : "-";
             String veri5 = (i < kuvvet5.size()) ? String.valueOf(kuvvet5.get(i)) : "-";
             System.out.println(i+ "\t        " + veri4 + "\t        " + veri5);//aynı şekilde tablo oturtmak için boşluklar
