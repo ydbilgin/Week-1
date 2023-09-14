@@ -8,7 +8,11 @@ public class Main {
         n = inp.nextDouble();
         for (double i=1; i<=n ; i++){
             toplam = toplam + (1/i);
+
         }
-        System.out.println("Harmonik serisinin sonucu : " + toplam);
+        String toplamStr = String.valueOf(toplam);
+        toplamStr = toplamStr.substring(0,5);
+
+        System.out.println("Harmonik serisinin sonucu : " + toplamStr);
     }
 }
