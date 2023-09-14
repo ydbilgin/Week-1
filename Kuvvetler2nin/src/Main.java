@@ -24,8 +24,8 @@ public class Main {
         System.out.println("Kuvvetler\t4\t        5"); // tabloda eşit bi şekilde oturması için kuvvetler charı kadar boşluk bıraktım
         int maxSize = Math.max(kuvvet4.size(), kuvvet5.size());
         for (int i = 0 ; i <= maxSize-1 ; i++){
-            String veri4 = (i < kuvvet4.size()) ? String.valueOf(kuvvet4.get(i)) : "-";
-            String veri5 = (i < kuvvet5.size()) ? String.valueOf(kuvvet5.get(i)) : "-";
+            String veri4 = (i < kuvvet4.size()) ? "" + (kuvvet4.get(i)) : "-";
+            String veri5 = (i < kuvvet5.size()) ? "" + (kuvvet5.get(i) ): "-";
             System.out.println(i+ "\t        " + veri4 + "\t        " + veri5);//aynı şekilde tablo oturtmak için boşluklar
         }
 
