@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Bir sayı giriniz : ");
         n = inp.nextDouble();
         for (double i=1; i<=n ; i++){
-            toplam = toplam + (1/i);
+            toplam = toplam + (Double)(1/i);
 
         }
         String toplamStr = String.valueOf(toplam);
