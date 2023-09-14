@@ -33,7 +33,7 @@ public class Main {
                 System.out.println(c + " < " + a + " < " + b);
             }
         }
-
+        System.out.println(a<b);
 
     }
 }
