@@ -28,7 +28,7 @@ public class Main {
         }
         // Formül
         kombinasyon = nFac/(rFac*farkToplam);
-        System.out.println("C(n,r) = " + kombinasyon );
+        System.out.println("C(" +n + "," + r+")" + "=" + kombinasyon );
 
 
 
