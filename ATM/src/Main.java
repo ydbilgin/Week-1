@@ -58,7 +58,7 @@ public class Main {
                 tryCount--;
                 if (tryCount == 0) {
                     System.out.println("Hakkınız kalmamıştır! Lütfen bankayla iletişime geçiniz.");
-                    System.exit(0);
+
 
                 } else {
                     System.out.println("Hatalı kullanıcı adı veya şifre! Lütfen tekrar deneyiniz");
