@@ -2,20 +2,21 @@ package Week1;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
-        int n;
-        System.out.print("Basamak sayısını giriniz: ");  //basamak sayısını kullanıcıdan alıyoruz.
+        Scanner input = new Scanner(System.in);
+        //Bir sayının kendisi hariç pozitif tam sayı çarpanları (kalansız bölen sayıların) toplamı kendisine eşit olan sayıya mükemmel sayı denir.
+        int n,toplam=0;  //değişkenler
+        System.out.print("Bir sayı giriniz: ");
         n=input.nextInt();
 
-        for(int i=1;i<=n;i++){
-
-            for(int b=1;b<=(i-1);b++){   //her basamak için boşluk sayımız i den 1 eksik oluyor.
-                System.out.print(" ");
+        for(int i=1;i<n;i++){        //burada for döngüsüyle sayının KENDİNDEN KÜÇÜK çarpanlarını topluyoruz.
+            if(n%i==0){
+                toplam=toplam+i;
             }
-            for (int y=1;y<=(((n-i)*2)+1);y++){  // her basamak için yıldız degerimiz ((n-i)*2)+1 kadar oluyor.
-                System.out.print("*");
-            }
-            System.out.println();
+        }
+        if(toplam==n){             //eğer topladığımız sayı kendisine eşitse bu sayı mükemmel sayıdır.
+            System.out.println(n+" Mükemmel Sayıdır !");
+        }else{
+            System.out.println(n+" Mükemmel sayı değildir.");
         }
 
     }
