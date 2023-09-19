@@ -10,7 +10,7 @@ public class Main {
             boolean asal = true;
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
-                    asal=false;
+                    asal = false;
                 }
             }
             if (asal) {
